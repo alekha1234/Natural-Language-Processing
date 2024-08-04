@@ -6,66 +6,36 @@ The main purpose of this repository is to consolidate my NLP-related work, provi
 
 ## <span style="font-family: Verdana; color: #2980b9;">Text Preprocessing Steps</span>
 
-1. **<span style="color: #e74c3c;">Lowercasing</span>**
-   - Convert all characters in a text to lowercase for uniformity.
-
-2. **<span style="color: #e74c3c;">Removing Punctuation</span>**
-   - Eliminate punctuation marks to focus solely on the words.
-
-3. **<span style="color: #e74c3c;">Tokenization</span>**
-   - Split text into individual words or tokens for analysis.
-
-4. **<span style="color: #e74c3c;">Removing Stop Words</span>**
-   - Filter out common words that carry little meaning in analysis.
-
-5. **<span style="color: #e74c3c;">Lemmatization</span>**
-   - Reduce words to their base or dictionary form, preserving meaning.
-
-6. **<span style="color: #e74c3c;">Stemming</span>**
-   - Cut words down to their root form, which may not always result in a valid word.
-
-7. **<span style="color: #e74c3c;">Removing Numbers</span>**
-   - Remove or convert numeric values from the text if they do not contribute to the analysis.
-
-8. **<span style="color: #e74c3c;">Handling Negations / Contractions</span>**
-   - Retain or modify negations to preserve sentiment in analysis.
-
-9. **<span style="color: #e74c3c;">Removing Extra Whitespace</span>**
-   - Trim and normalize spaces between words for clean formatting.
-
-10. **<span style="color: #e74c3c;">Correcting Misspellings</span>**
-    - Use tools like `pyspellchecker`, `TextBlob`, or `Hunspell` to fix common spelling errors.
-
-11. **<span style="color: #e74c3c;">Removing URLs and Email Addresses</span>**
-    - Eliminate web links and email addresses that are irrelevant to the analysis using regex.
-
-12. **<span style="color: #e74c3c;">Removing Non-English Words</span>**
-    - Filter out words that are not in English.
-
-13. **<span style="color: #e74c3c;">Encoding Handling / Special Characters</span>**
-    - Remove or convert special characters that do not contribute meaningfully.
-
-14. **<span style="color: #e74c3c;">Unicode Normalization</span>**
-    - Transform text to a standard form for consistent representation of characters.
+1. **<span style="color: #e74c3c;">Lowercasing</span>**: Convert all characters in a text to lowercase for uniformity.
+2. **<span style="color: #e74c3c;">Removing Punctuation</span>**: Eliminate punctuation marks to focus solely on the words.
+3. **<span style="color: #e74c3c;">Tokenization</span>**: Split text into individual words or tokens for analysis.
+4. **<span style="color: #e74c3c;">Removing Stop Words</span>**: Filter out common words that carry little meaning in analysis.
+5. **<span style="color: #e74c3c;">Lemmatization</span>**: Reduce words to their base or dictionary form, preserving meaning.
+6. **<span style="color: #e74c3c;">Stemming</span>**: Cut words down to their root form, which may not always result in a valid word.
+7. **<span style="color: #e74c3c;">Removing Numbers</span>**: Remove or convert numeric values from the text if they do not contribute to the analysis.
+8. **<span style="color: #e74c3c;">Handling Negations / Contractions</span>**: Retain or modify negations to preserve sentiment in analysis.
+9. **<span style="color: #e74c3c;">Removing Extra Whitespace</span>**: Trim and normalize spaces between words for clean formatting.
+10. **<span style="color: #e74c3c;">Correcting Misspellings</span>**: Use tools like `pyspellchecker`, `TextBlob`, or `Hunspell` to fix common spelling errors.
+11. **<span style="color: #e74c3c;">Removing URLs and Email Addresses</span>**: Eliminate web links and email addresses that are irrelevant to the analysis using regex.
+12. **<span style="color: #e74c3c;">Removing Non-English Words</span>**: Filter out words that are not in English.
+13. **<span style="color: #e74c3c;">Encoding Handling / Special Characters</span>**: Remove or convert special characters that do not contribute meaningfully.
+14. **<span style="color: #e74c3c;">Unicode Normalization</span>**: Transform text to a standard form for consistent representation of characters.
 
 ## <span style="font-family: Verdana; color: #2980b9;">Text Representation Techniques</span>
 
 Converting text data into numeric vector representations is known as **Text Representation** or **Text Vectorization**. Below are the classical and neural approaches for text representation:
 
 ### <span style="font-family: Tahoma; color: #16a085;">Classical or Traditional Approach</span>
-
 - **One Hot Encoding**
 - **TF-IDF (Term Frequency – Inverse Document Frequency)**
 - **Bag of Words (BoW)**
 
 ### <span style="font-family: Tahoma; color: #16a085;">Neural Approach (Word Embedding)</span>
-
 - **CBOW (Continuous Bag of Words)**
 - **SkipGram**
 - **N-Grams**
 
 ### <span style="font-family: Tahoma; color: #16a085;">Pre-Trained Word Embeddings</span>
-
 - **Word2Vec** - Developed by Google
 - **GloVe** - Developed by Stanford
 - **FastText** - Developed by Facebook (Gensim)
